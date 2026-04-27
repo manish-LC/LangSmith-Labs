@@ -40,13 +40,14 @@ Required for LangSmith tracing:
 LANGSMITH_API_KEY=
 LANGSMITH_TRACING=true
 LANGSMITH_PROJECT=support-engineer-learning-lab
+LANGSMITH_ENDPOINT=https://beta.api.smith.langchain.com
 ```
 
 Optional for real LLM calls:
 
 ```bash
 OPENAI_API_KEY=
-OPENAI_MODEL=gpt-4o-mini
+OPENAI_MODEL=gpt-5.4-mini
 ```
 
 Without `OPENAI_API_KEY`, the lab still runs with deterministic local answers so you can learn trace structure before connecting a model provider.
