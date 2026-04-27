@@ -1,0 +1,22 @@
+[project]
+name = "langsmith-learning-lab"
+version = "0.1.0"
+description = "Hands-on LangChain, LangGraph, and LangSmith learning app for support engineering practice."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.0,<2.0",
+    "langgraph>=1.0,<2.0",
+    "langsmith>=0.4,<0.5",
+    "langchain-openai>=1.0,<2.0",
+    "python-dotenv>=1.0,<2.0",
+    "pydantic>=2.0,<3.0",
+    "rich>=13.0,<15.0",
+]
+
+[project.scripts]
+langsmith-lab = "langsmith_learning_lab.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.9,<0.12"]
+build-backend = "uv_build"

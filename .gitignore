@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.json
+token.json
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.DS_Store
+dist/
+build/
+*.egg-info/
